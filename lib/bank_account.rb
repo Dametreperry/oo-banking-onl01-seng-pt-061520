@@ -9,6 +9,15 @@ class BankAccount
   end
 
   def deposit(deposit) 
-  @balance + deposit
+  @balance + deposit = @balance
+  end
+  
+  def display_balance
+    @balance
+  end
+  
+  def valid?
+    if @balance <= 0 
+      
 
 end
